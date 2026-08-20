@@ -1,0 +1,105 @@
+{
+  "request": {
+    "query": "Compare single-agent and multi-agent workflows for customer support",
+    "max_sources": 5,
+    "audience": "technical learners"
+  },
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "iteration": 3,
+  "input_tokens": 3484,
+  "output_tokens": 1434,
+  "estimated_cost_usd": 0.0013829999999999997,
+  "errors": [],
+  "trace": [
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "researcher"
+      },
+      "elapsed_seconds": 1.7183901999960653
+    },
+    {
+      "name": "supervisor.decision",
+      "payload": {
+        "next": "researcher",
+        "reason": "sources or research notes are missing",
+        "iteration": 1
+      },
+      "elapsed_seconds": 1.7183935000211932
+    },
+    {
+      "name": "researcher.done",
+      "payload": {
+        "source_count": 5,
+        "provider": "tavily"
+      },
+      "elapsed_seconds": 9.300034400017466
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "analyst"
+      },
+      "elapsed_seconds": 9.302068700024392
+    },
+    {
+      "name": "supervisor.decision",
+      "payload": {
+        "next": "analyst",
+        "reason": "analysis notes are missing",
+        "iteration": 2
+      },
+      "elapsed_seconds": 9.302070700039621
+    },
+    {
+      "name": "analyst.done",
+      "payload": {
+        "source_count": 5
+      },
+      "elapsed_seconds": 16.702653900021687
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "writer"
+      },
+      "elapsed_seconds": 16.70464340003673
+    },
+    {
+      "name": "supervisor.decision",
+      "payload": {
+        "next": "writer",
+        "reason": "final answer is missing",
+        "iteration": 3
+      },
+      "elapsed_seconds": 16.704645099991467
+    },
+    {
+      "name": "writer.done",
+      "payload": {
+        "source_count": 5
+      },
+      "elapsed_seconds": 21.65330599999288
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "next": "done"
+      },
+      "elapsed_seconds": 21.65515800000867
+    },
+    {
+      "name": "supervisor.decision",
+      "payload": {
+        "next": "done",
+        "reason": "final answer is complete",
+        "iteration": 3
+      },
+      "elapsed_seconds": 21.655159900023136
+    }
+  ]
+}

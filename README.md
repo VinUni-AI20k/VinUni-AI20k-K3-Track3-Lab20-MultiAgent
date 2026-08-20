@@ -6,7 +6,7 @@ Starter repo cho bài lab **Multi-Agent Systems**: xây dựng hệ thống nghi
 
 ## Learning outcomes
 
-Sau 2 giờ lab, học viên cần có thể:
+Sau 240 phút lab, học viên cần có thể:
 
 1. Thiết kế role rõ ràng cho nhiều agent.
 2. Xây dựng shared state đủ thông tin cho handoff.
@@ -81,7 +81,7 @@ make test
 python -m multi_agent_research_lab.cli --help
 ```
 
-### 4. Chạy baseline skeleton
+### 4. Chạy baseline
 
 ```bash
 python -m multi_agent_research_lab.cli baseline \
@@ -97,9 +97,15 @@ python -m multi_agent_research_lab.cli multi-agent \
   --query "Research GraphRAG state-of-the-art and write a 500-word summary"
 ```
 
-Mặc định lệnh sẽ báo các `TODO` cần làm. Đây là chủ đích của starter repo.
+### 6. Chạy benchmark
 
-## Milestones trong 2 giờ lab
+```bash
+python -m multi_agent_research_lab.cli baseline --query "Explain multi-agent systems"
+python -m multi_agent_research_lab.cli multi-agent --query "Explain multi-agent systems"
+python -m multi_agent_research_lab.cli benchmark
+```
+
+## Milestones trong 240 phút lab
 
 | Thời lượng | Milestone | File gợi ý |
 |---:|---|---|
