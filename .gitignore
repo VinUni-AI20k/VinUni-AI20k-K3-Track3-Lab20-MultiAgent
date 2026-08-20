@@ -11,4 +11,5 @@ build/
 reports/*.json
 reports/*.md
 !reports/benchmark_report.md
+!reports/benchmark_trace.json
 !.gitkeep

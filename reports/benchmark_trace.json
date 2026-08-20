@@ -1,0 +1,148 @@
+{
+  "request": {
+    "query": "Compare single-agent and multi-agent workflows for customer support",
+    "max_sources": 5,
+    "audience": "technical learners"
+  },
+  "iteration": 4,
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer",
+    "done"
+  ],
+  "sources": [
+    {
+      "title": "Building effective agents",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "snippet": "Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary.",
+      "metadata": {
+        "provider": "offline",
+        "publisher": "Anthropic"
+      }
+    },
+    {
+      "title": "OpenAI Agents SDK — Orchestrating multiple agents",
+      "url": "https://openai.github.io/openai-agents-python/multi_agent/",
+      "snippet": "Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist.",
+      "metadata": {
+        "provider": "offline",
+        "publisher": "OpenAI"
+      }
+    },
+    {
+      "title": "LangGraph overview",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "snippet": "LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents.",
+      "metadata": {
+        "provider": "offline",
+        "publisher": "LangChain"
+      }
+    },
+    {
+      "title": "GraphRAG: Unlocking LLM discovery on narrative private data",
+      "url": "https://www.microsoft.com/en-us/research/project/graphrag/",
+      "snippet": "GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus.",
+      "metadata": {
+        "provider": "offline",
+        "publisher": "Microsoft Research"
+      }
+    },
+    {
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "snippet": "Interleaving reasoning traces with actions lets language models update plans using observations from external environments.",
+      "metadata": {
+        "provider": "offline",
+        "publisher": "arXiv"
+      }
+    }
+  ],
+  "research_notes": "[1] Building effective agents: Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary.\n[2] OpenAI Agents SDK — Orchestrating multiple agents: Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist.\n[3] LangGraph overview: LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents.\n[4] GraphRAG: Unlocking LLM discovery on narrative private data: GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus.\n[5] ReAct: Synergizing Reasoning and Acting in Language Models: Interleaving reasoning traces with actions lets language models update plans using observations from external environments.",
+  "analysis_notes": "Evidence-backed claims:\n- Claim 1: Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary. [1]\n- Claim 2: Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist. [2]\n- Claim 3: LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents. [3]\n- Claim 4: GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus. [4]\n- Claim 5: Interleaving reasoning traces with actions lets language models update plans using observations from external environments. [5]\n\nSynthesis: Prefer the simplest orchestration that meets the task; use explicit state, bounded execution, traceability, and evaluation. Evidence is limited to the listed source excerpts and should be re-checked for time-sensitive decisions.",
+  "final_answer": "Offline synthesis (set OPENAI_API_KEY for a model-generated response):\n\nQuestion: Compare single-agent and multi-agent workflows for customer support Audience: technical learners Analysis: Evidence-backed claims: - Claim 1: Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary. [1] - Claim 2: Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist. [2] - Claim 3: LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents. [3] - Claim 4: GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus. [4] - Claim 5: Interleaving reasoning traces with actions lets language models update plans using observations from external environments. [5] Synthesis: Prefer the simplest orchestration that meets the task; use explicit state, bounded execution, traceability, and evaluation. Evidence is limited to the listed source excerpts and should be re-checked for time-sensitive decisions. Write a concise answer. Preserve [n] citations and state evidence limitations.\n\nReferences\n[1] Building effective agents — https://www.anthropic.com/engineering/building-effective-agents\n[2] OpenAI Agents SDK — Orchestrating multiple agents — https://openai.github.io/openai-agents-python/multi_agent/\n[3] LangGraph overview — https://docs.langchain.com/oss/python/langgraph/overview\n[4] GraphRAG: Unlocking LLM discovery on narrative private data — https://www.microsoft.com/en-us/research/project/graphrag/\n[5] ReAct: Synergizing Reasoning and Acting in Language Models — https://arxiv.org/abs/2210.03629",
+  "agent_results": [
+    {
+      "agent": "researcher",
+      "content": "[1] Building effective agents: Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary.\n[2] OpenAI Agents SDK — Orchestrating multiple agents: Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist.\n[3] LangGraph overview: LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents.\n[4] GraphRAG: Unlocking LLM discovery on narrative private data: GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus.\n[5] ReAct: Synergizing Reasoning and Acting in Language Models: Interleaving reasoning traces with actions lets language models update plans using observations from external environments.",
+      "metadata": {
+        "source_count": 5
+      }
+    },
+    {
+      "agent": "analyst",
+      "content": "Evidence-backed claims:\n- Claim 1: Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary. [1]\n- Claim 2: Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist. [2]\n- Claim 3: LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents. [3]\n- Claim 4: GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus. [4]\n- Claim 5: Interleaving reasoning traces with actions lets language models update plans using observations from external environments. [5]\n\nSynthesis: Prefer the simplest orchestration that meets the task; use explicit state, bounded execution, traceability, and evaluation. Evidence is limited to the listed source excerpts and should be re-checked for time-sensitive decisions.",
+      "metadata": {}
+    },
+    {
+      "agent": "writer",
+      "content": "Offline synthesis (set OPENAI_API_KEY for a model-generated response):\n\nQuestion: Compare single-agent and multi-agent workflows for customer support Audience: technical learners Analysis: Evidence-backed claims: - Claim 1: Use simple composable workflows first; add autonomous agents when flexible model-directed decisions are necessary. [1] - Claim 2: Manager-style orchestration keeps control in one agent, while handoffs transfer control to a specialist. [2] - Claim 3: LangGraph supports durable execution, human-in-the-loop, memory, and stateful orchestration for long-running agents. [3] - Claim 4: GraphRAG extracts structured knowledge from unstructured text and uses graph summaries to answer global questions over a corpus. [4] - Claim 5: Interleaving reasoning traces with actions lets language models update plans using observations from external environments. [5] Synthesis: Prefer the simplest orchestration that meets the task; use explicit state, bounded execution, traceability, and evaluation. Evidence is limited to the listed source excerpts and should be re-checked for time-sensitive decisions. Write a concise answer. Preserve [n] citations and state evidence limitations.\n\nReferences\n[1] Building effective agents — https://www.anthropic.com/engineering/building-effective-agents\n[2] OpenAI Agents SDK — Orchestrating multiple agents — https://openai.github.io/openai-agents-python/multi_agent/\n[3] LangGraph overview — https://docs.langchain.com/oss/python/langgraph/overview\n[4] GraphRAG: Unlocking LLM discovery on narrative private data — https://www.microsoft.com/en-us/research/project/graphrag/\n[5] ReAct: Synergizing Reasoning and Acting in Language Models — https://arxiv.org/abs/2210.03629",
+      "metadata": {
+        "input_tokens": 151,
+        "output_tokens": 159,
+        "cost_usd": null
+      }
+    }
+  ],
+  "trace": [
+    {
+      "name": "route",
+      "payload": {
+        "next": "researcher",
+        "iteration": 1
+      }
+    },
+    {
+      "name": "agent",
+      "payload": {
+        "name": "researcher",
+        "attributes": {
+          "attempt": 1
+        },
+        "duration_seconds": 0.000013374985428526998
+      }
+    },
+    {
+      "name": "route",
+      "payload": {
+        "next": "analyst",
+        "iteration": 2
+      }
+    },
+    {
+      "name": "agent",
+      "payload": {
+        "name": "analyst",
+        "attributes": {
+          "attempt": 1
+        },
+        "duration_seconds": 4.791014362126589e-6
+      }
+    },
+    {
+      "name": "route",
+      "payload": {
+        "next": "writer",
+        "iteration": 3
+      }
+    },
+    {
+      "name": "agent",
+      "payload": {
+        "name": "writer",
+        "attributes": {
+          "attempt": 1
+        },
+        "duration_seconds": 0.000043791980715468526
+      }
+    },
+    {
+      "name": "route",
+      "payload": {
+        "next": "done",
+        "iteration": 4
+      }
+    }
+  ],
+  "errors": []
+}
