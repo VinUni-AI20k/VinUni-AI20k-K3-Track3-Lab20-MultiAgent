@@ -1,8 +1,4 @@
-"""Tracing hooks.
-
-This file intentionally avoids binding to one provider. Students can plug in LangSmith,
-Langfuse, OpenTelemetry, or simple JSON traces.
-"""
+"""Provider-neutral tracing hooks exported through shared state as JSON."""
 
 from collections.abc import Iterator
 from contextlib import contextmanager
@@ -12,10 +8,7 @@ from typing import Any
 
 @contextmanager
 def trace_span(name: str, attributes: dict[str, Any] | None = None) -> Iterator[dict[str, Any]]:
-    """Minimal span context used by the skeleton.
-
-    TODO(student): Replace or augment with LangSmith/Langfuse provider spans.
-    """
+    """Measure a named span that can be serialized in the workflow trace."""
 
     started = perf_counter()
     span: dict[str, Any] = {"name": name, "attributes": attributes or {}, "duration_seconds": None}
